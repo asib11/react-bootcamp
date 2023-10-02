@@ -13,11 +13,33 @@ const displayData = countries =>{
 
 }
 
-const getCountryInfo = country =>{
+// const getCountryInfo = country =>{
+//     return `
+//         <div class="country">
+//             <h2>${country.name.common}</h2>
+//             <img src="${country.flags.png}">
+//         </div>
+//     `;
+// }
+
+
+// const getCountryInfo = country =>{
+//     //option 1 destructuring
+//     const {name, flags} = country; // destructuring
+//     return `
+//         <div class="country">
+//             <h2>${name.common}</h2>
+//             <img src="${flags.png}">
+//         </div>
+//     `;
+// }
+
+
+const getCountryInfo = ({name, flags}) =>{ //option 2 destructuring
     return `
         <div class="country">
-            <h2>${country.name.common}</h2>
-            <img src="${country.flags.png}">
+            <h2>${name.common}</h2>
+            <img src="${flags.png}">
         </div>
     `;
 }
