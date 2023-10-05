@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 
 function App() {
   const details = [{name:"Asib", mobile:"01753249719"},{name:"Goru", mobile:"0151111111"},{name:"Basur", mobile:"1234456788"}];
@@ -13,6 +13,7 @@ function App() {
       <Person name="Basur" mobile="1234456788"></Person> */}
       {details.map(person => <Person name={person.name} mobile={person.mobile}></Person>)}
       <Counter></Counter>
+      <ExtranalUser></ExtranalUser>
     </div>
   );
 }
@@ -38,6 +39,37 @@ function Counter(){
       <button onClick={decrease}>decrease</button>
     </div>
   )
+}
+
+function ExtranalUser(){
+  const [users, setUsers] = useState([]);
+  useEffect(()=>{
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(res => res.json())
+    .then(data => setUsers(data))
+  },[]);
+  return (
+    <div>
+      <h1>User Serial</h1>
+    {
+      users.map(user => <User name={user.name} email = {user.email}></User>)
+    }
+    </div>
+  )
+}
+
+function User(props){
+  return (
+    <div style={userDesign}>
+      <h3>name:{props.name}</h3>
+      <p>email: {props.email}</p>
+    </div>
+  )
+}
+
+const userDesign ={
+  border:'2px solid black',
+  margin : '20px'
 }
 
 export default App;
