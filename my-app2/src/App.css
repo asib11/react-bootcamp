@@ -7,6 +7,15 @@
   pointer-events: none;
 }
 
+.person{
+  border: 2px solid brown;
+  width: 40%;
+  background-color: #61dafb;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
