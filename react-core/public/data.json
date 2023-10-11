@@ -1,37 +1,37 @@
 [
     {
-      "id": "65258958065ab5bd3c0ed011",
-      "index": 0,
-      "guid": "a14a81bb-ad06-4969-ab48-06dc13dfcfdf"
+      "id": "652591e05e189ffc5c7d2b9b",
+      "guid": "f57fb183-476b-4b28-95c7-99a8b6591ace",
+      "balance": "$2,441.34"
     },
     {
-      "id": "652589580275c7d1f50a5599",
-      "index": 1,
-      "guid": "a264c54a-6083-490a-95bf-9da9340a5893"
+      "id": "652591e0afca18534479c48b",
+      "guid": "1f66f19e-5be6-4591-99ad-c4348f6aacaa",
+      "balance": "$2,336.70"
     },
     {
-      "id": "65258958b5a837347f970de1",
-      "index": 2,
-      "guid": "c8331d1d-33ea-4b0a-bc95-2af6afa80aee"
+      "id": "652591e0a9a9ff440da64d62",
+      "guid": "f5973f1e-3930-473a-9ac3-2b81666f2bd8",
+      "balance": "$1,203.28"
     },
     {
-      "id": "65258958474d5b9c7984f937",
-      "index": 3,
-      "guid": "ff07a916-e7b3-46de-902b-11e068b552ac"
+      "id": "652591e05298bad7d50b3de4",
+      "guid": "68817c93-8ea9-4588-8635-a0881b38e40f",
+      "balance": "$1,056.66"
     },
     {
-      "id": "65258958c7640a7a51318b0e",
-      "index": 4,
-      "guid": "db4fdd9d-f647-448a-9b2a-64e1cc30c229"
+      "id": "652591e0d40c3d16a260bdf4",
+      "guid": "9a2fd3c0-6022-4bc6-bbeb-ad720d08e01b",
+      "balance": "$1,841.27"
     },
     {
-      "id": "652589582d87506d4c192a59",
-      "index": 5,
-      "guid": "34d0a22a-a73e-4b5c-a3a5-faadba5ad9f5"
+      "id": "652591e02635b05afc950367",
+      "guid": "552fae28-49b7-4775-81be-563c0756508a",
+      "balance": "$2,689.04"
     },
     {
-      "id": "652589587248a1437ace694d",
-      "index": 6,
-      "guid": "45d3e6c1-7c43-439f-b3f1-dc17e75f5f05"
+      "id": "652591e02c7d957240f92394",
+      "guid": "f80c562e-96aa-486b-b726-53befc3796c7",
+      "balance": "$2,252.39"
     }
   ]
