@@ -12,6 +12,7 @@ const Calculator = () => {
         <div>
             <h1>show addtion: {result}</h1>
             <h1>show devide : {devided}</h1>
+            
         </div>
     );
 };
