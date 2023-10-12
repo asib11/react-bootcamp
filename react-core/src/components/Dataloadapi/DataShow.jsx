@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types'; 
+import { fakeDB } from '../utilities/addCart';
 
 const DataShow = props => {
     const {id,  balance} = props.jData ;
     const btnClick = (id) =>{
-        console.log(id)
+        fakeDB(id);
     }
 
     const purchase = (id) =>{
