@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'; 
-import { fakeDB } from '../utilities/addCart';
+import { fakeDB, removeItem } from '../utilities/addCart';
 
 const DataShow = props => {
     const {id,  balance} = props.jData ;
@@ -7,11 +7,11 @@ const DataShow = props => {
         fakeDB(id);
     }
 
-    const purchase = (id) =>{
-        console.log(id)
+    const remove = (id) =>{
+        removeItem(id)
     }
 
-    const purchaseAdd = () => purchase(id)
+    const removeAdd = () => remove(id)
     return (
         <div>
             <h2>id: {id}</h2>
@@ -19,7 +19,7 @@ const DataShow = props => {
             <h4>price: {balance}</h4>
             <div className="btn">
                 <button onClick={() =>btnClick(id)}>add to card</button> {/*short process*/}
-                <button onClick={purchaseAdd}>purchase</button> {/*long process */}
+                <button onClick={removeAdd}>remove</button> {/*long process */}
             </div>
         </div>
     );
