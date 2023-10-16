@@ -6,13 +6,13 @@ function App() {
   //const [count, setCount] = useState(0)
  
   return (
-    <nav>
+    <div>
         <Navbar></Navbar>
       <h1 className="text-7xl font-bold text-cyan-500 text-center">
         Welcome to Price Cart
       </h1>
 
-    </nav>
+    </div>
   )
 }
 
