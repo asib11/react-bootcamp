@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from '../Link/Link';
 import './Navbar.css';
-import { Bars3Icon } from '@heroicons/react/24/solid';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 
 
 const Navbar = () => {
@@ -9,38 +9,40 @@ const Navbar = () => {
 
     const navBars = [
         {
-          "id": 1,
-          "name": "Home",
-          "route": "/"
+            "id": 1,
+            "name": "Home",
+            "route": "/"
         },
         {
-          "id": 2,
-          "name": "About Us",
-          "route": "/about"
+            "id": 2,
+            "name": "About Us",
+            "route": "/about"
         },
         {
-          "id": 3,
-          "name": "Services",
-          "route": "/services"
+            "id": 3,
+            "name": "Services",
+            "route": "/services"
         },
         {
-          "id": 4,
-          "name": "Portfolio",
-          "route": "/portfolio"
+            "id": 4,
+            "name": "Portfolio",
+            "route": "/portfolio"
         },
         {
-          "id": 5,
-          "name": "Contact",
-          "route": "/contact"
+            "id": 5,
+            "name": "Contact",
+            "route": "/contact"
         }
-      ]
-    
+    ]
+
     return (
-        <nav>
-            <div onClick={()=> setOpen(!open)}>
-            <Bars3Icon className="h-6 w-6 text-blue-500" />
+        <nav >
+            <div onClick={() => setOpen(!open)} className='md:hidden'>
+                <span>
+                    {open === true ?  <XMarkIcon className="h-6 w-6 text-blue-500" />: <Bars3Icon className="h-6 w-6 text-blue-500" /> }
+                </span>
             </div>
-            <ul className='md:flex'>
+            <ul className={`md:flex absolute duration-500 md:static ${open? 'top-6': '-top-36'}`}>
                 {navBars.map(navBar => <Link key={navBar.id} navBar={navBar} ></Link>)}
             </ul>
         </nav>
