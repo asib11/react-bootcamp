@@ -1,3 +1,4 @@
+import Link from '../Link/Link';
 import './Navbar.css';
 
 
@@ -32,8 +33,8 @@ const Navbar = () => {
     
     return (
         <div>
-            <ul>
-                {navBars.map(navBar => <li key={navBar.id}>{navBar.name}</li>)}
+            <ul className='md:flex'>
+                {navBars.map(navBar => <Link key={navBar.id} navBar={navBar} ></Link>)}
             </ul>
         </div>
     );
