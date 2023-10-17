@@ -1,5 +1,6 @@
 //import { useState } from 'react'
 import './App.css'
+import Chart from './components/Chart/Chart'
 import Navbar from './components/Navbar/Navbar'
 import Price from './components/Price/Price'
 
@@ -13,7 +14,7 @@ function App() {
         Welcome to Price Cart
       </h1>
       <Price></Price>
-
+      <Chart></Chart>
     </div>
   )
 }
