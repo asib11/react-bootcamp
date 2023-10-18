@@ -6,15 +6,47 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Contact from './components/Contact.jsx';
+import About from './components/About.jsx';
+import Home from './components/Home.jsx';
+import User from './components/User.jsx';
+
+// const router = createBrowserRouter([
+//   {
+//     path: '/',
+//     element : <App></App>
+//   },
+//   {
+//     path:'/contact',
+//     element: <Contact></Contact>
+//   }, 
+//   {
+//     path:'/about',
+//     element: <About></About>
+//   }, 
+// ])
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element : <App></App>
-  },
-  {
-    path:'/contact',
-    element: <div> this is my contact</div>
+    element: <Home></Home>,
+    children:[
+      {
+        path: 'contact',
+        element: <Contact></Contact>
+      },
+      
+      {
+        path: 'user',
+        element: <User></User>,
+        loader: () =>fetch('https://jsonplaceholder.typicode.com/users')
+      },
+      {
+        path: 'about',
+        element: <About></About>
+      },
+      
+    ]
   }
 ])
 
