@@ -1,12 +1,13 @@
-import { Link } from "react-router-dom";
+import ActiveLink from "./ActiveLink";
 
 const Header = () => {
     return (
-        <div >
-            <Link to="/" style={{marginRight: "10px"}}>Home</Link>
-            <Link to="/contact" style={{marginRight: "10px"}}>Contact</Link>
-            <Link to="/about" style={{marginRight: "10px"}}>About</Link>
-            <Link to='/user' style={{marginRight: "10px"}}>User</Link>
+        <div style={{display: 'flex', justifyContent: 'center', gap:'10px'}}>
+            <ActiveLink to="/" >Home</ActiveLink>
+            <ActiveLink to="/contact" >Contact</ActiveLink>
+            <ActiveLink to="/about" >About</ActiveLink>
+            <ActiveLink to='/user' >User</ActiveLink>
+            
         </div>
     );
 };
